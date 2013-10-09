@@ -5,6 +5,11 @@ _Nagios package for Sublime Text_
 A small package that provides syntax highlighting, block commenting, and snippet support for
 defining hosts/services etc. It's a fork of the original nagios-sublime by bn0.
 
+*Caveat*: This is still under development, the JSON definitions (not used by ST3) might
+be out of sync with the plist definitions from time to time.
+
+Pull requests are welcome.
+
 INSTALLATION
 -------------
 <dl>
