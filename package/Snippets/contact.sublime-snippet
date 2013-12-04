@@ -5,10 +5,10 @@
 
 	<content><![CDATA[
 contact \{
-	use				${1:template}
-	contact_name	${2:name}
-	alias			${3:alias}
-	email			${4:email}
+	use             ${1:template}
+	contact_name    ${2:name}
+	alias           ${3:alias}
+	email           ${4:email}
 \}
 ${0}
 ]]></content>
