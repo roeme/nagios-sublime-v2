@@ -5,14 +5,17 @@
 
 	<content><![CDATA[
 contact \{
-	name							${1:name}
-	service_notification_period		${2:24x7}
-	host_notification_period		${3:24x7}
-	service_notification_options	${4:w,u,c,r,f,s}
-	host_notification_options		${5:d,u,r,f,s}
-	service_notification_commands	${6:notify-service-by-email}
-	host_notification_commands		${7:notify-host-by-email}
-	register						0
+    name                             ${1:name}
+    host_notifications_enabled       ${2:1,0}
+    service_notifications_enabled    ${3:1,0}
+    host_notification_period         ${4:24x7}
+    service_notification_period      ${5:24x7}
+    host_notification_options        ${6:d,u,r,f,s}
+    service_notification_options     ${7:w,u,c,r,f,s}
+    host_notification_commands       ${8:notify_host_by_email,notify_host_to_site,notify_host_to_omnibus}
+    service_notification_commands    ${9:notify_service_by_email,notify_service_to_site,notify_service_to_omnibus}
+    register                         0
+
 \}
 ${0}
 ]]></content>
